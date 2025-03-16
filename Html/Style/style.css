@@ -48,7 +48,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .Paragrafo-principal {
-    font-size: 22px !important; /* Aumente ou ajuste o tamanho da fonte conforme necessário */
+    font-size: 20px !important; /* Aumente ou ajuste o tamanho da fonte conforme necessário */
     margin-top: 35px;
 
   }
@@ -884,7 +884,7 @@ body {
       .logo-final {
         display: flex;
         position: absolute;  /* Garante que a logo se posicione sobre a imagem */
-        top: 40%;
+        top: 41%;
         left: 50%;
         transform: translateX(-50%);  /* Centraliza horizontalmente */
         width: 150px;  /* Ajuste o tamanho da logo */
@@ -983,15 +983,15 @@ body {
     margin-left: 0; /* Remove a margem esquerda */
     text-align: center; /* Centraliza o texto */
     white-space: normal; /* Permite que o texto quebre em telas menores */
-    
+    font-size: 15px;
   }
 }
 
 /* Ajustes adicionais para telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
    .fonte2 {
-    font-size: 20px; /* Reduz o tamanho da fonte para smartphones */
-    margin-top: 380px; /* Ajuste este valor conforme necessário para mover mais para baixo */
+    font-size: 15px; /* Reduz o tamanho da fonte para smartphones */
+    margin-top: 400px; /* Ajuste este valor conforme necessário para mover mais para baixo */
   }
 }
 
