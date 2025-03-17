@@ -101,8 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('localizacao').addEventListener('click', () => {
-        const mapsURL = 'https://www.google.com/maps?q=KS+Porcelanataria,+R.+Antonio+Franciscão+Neto,+248+-+Belmonte,+Cascavel+-+PR,+85817-866';
-        window.open(mapsURL, '_blank'); // Abre em uma nova aba
+        const endereco = "KS+Porcelanataria,+R.+Antonio+Franciscão+Neto,+248,+Belmonte,+Cascavel+-+PR,+85817-866";
+
+        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            // Para dispositivos móveis
+            window.location.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
+        } else {
+            // Para desktop
+            window.open(`https://www.google.com/maps?q=${encodeURIComponent(endereco)}`, '_blank');
+        }
     });
 
     // Funcionalidade de rolagem para links na navegação
