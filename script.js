@@ -100,10 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Função para redirecionar para o Google Maps
     document.getElementById('localizacao').addEventListener('click', () => {
-        const mapsURL = 'https://www.google.com/maps/search/Rua+Antonio+Franciscao+Neto,+248+-+Belmonte+-+CEP+85817-866+-+Cascavel%2FPR/@-24.9329702,-53.4067153,20.25z?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D';
-        window.location.href = mapsURL;
+        const mapsURL = 'https://www.google.com/maps?q=KS+Porcelanataria,+R.+Antonio+Franciscão+Neto,+248+-+Belmonte,+Cascavel+-+PR,+85817-866';
+        window.open(mapsURL, '_blank'); // Abre em uma nova aba
     });
 
     // Funcionalidade de rolagem para links na navegação
